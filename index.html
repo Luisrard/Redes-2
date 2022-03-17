@@ -44,19 +44,60 @@
             </ul>
         </div>
         <h4>1.1.4 Verificación de la conectividad de redes conectads directamente</h4>
-        <div></div>
+        <div class="H5">
+            <p>Comandos show para verificar la operación y la configuración de una interfaz.</p>
+            <ul>
+                <li>show ip interfaces brief</li>
+                <li>show ip route</li>
+                <li>show running-config</li>
+            </ul>
+            <p>Comandos show para reunir información más detallada acerca de la interfaz.</p>
+            <ul>
+                <li>show interfaces</li>
+                <li>show ip interfaces</li>
+            </ul>
+        </div>
     </div>
     <h3>1.2 Decisiones de routing</h3>
     <div class="H3">
         <h4>1.2.1 Switching de paquetes entre redes</h4>
+        <div class="H4">
+            <img src="switching_1.PNG" alt="Switching de paquetes entre redes" style="width:500px;height:auto;">            
+        </div>
         <h4>1.2.2 Determinación de ruta</h4>
+        <div class="H4">
+            <img src="determinacion_1.PNG" alt="Determinación de ruta" style="width:500px;height:auto;">            
+        </div>
     </div>
     <h3>1.3 Funcionamiento del router</h3>
     <div class="H3">
         <h4>1.3.1 Análisis de la tabla de routing</h4>
+        <div class="H4">
+            <p>La tabla de routing es un archivo almacenado en la RAM que contiene información acerca de lo siguiente:</p>
+            <ul>
+                <li>Rutas conectadas directamente</li>
+                <li>Rutas remotas</li>
+                <li>Asociaciones de red o de siguiente salto</li>
+            </ul>          
+            <p>El comando show ip route se utiliza para mostrar el contenido de la tabla de routing.</p>      
+        </div>
         <h4>1.3.2 Rutas conectadas directamente</h4> 
+        <div class="H4">
+            <p>Un router recién implementado, sin interfaces configuradas, tiene una tabla de routing vacía.</p>
+            <p>Una interfaz configurada, activa y conectada directamente conectada crea dos entradas en la tabla de routing: una de link-local y otra conectada directamente.</p>
+        </div>
         <h4>1.3.3 Rutas descubiertas estáticamente</h4>
+        <div class="H4">
+            <p>Se configuran manualmente</p>
+            <p>Definen una ruta explícita entre dos dispositivos de red.</p>
+            <p>Se debe actualizar manualmente si la topología cambia.</p>
+            <p>Entra las ventajas se incluye una mejora en la seguridad y el control de recursos.</p>
+        </div>
         <h4>1.3.4 Protocolos de routing dinámico</h4>  
+        <div class="H4">
+            <p>Lo utilizan los routers para compartir información sobre la posibilidad de conexión y el estado de las redes remotas.</p>
+            <p>Realiza la detección de redes y el mantenimiento de las tablas de routing.</p>
+        </div>
     </div> 
 </body>
 </html>
