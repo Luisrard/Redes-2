@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="img/logo.png"/>
-    <title>Routing</title>
+    <title>Mis Notas Redes</title>
     <!--Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +21,10 @@
 <body>
     <div class="navegacion">
         <h1 class="navegacion__enlace">Redes 2</h1>
-        <h2 class="navegacion__enlace">Unidad 1. Conceptos de routing</h2>
+        <h2 class="navegacion__enlace">Mis Notas Redes</h2>
     </div>
+    <h3>Luis Alberto Chavez Macias</h4>
+    <h2>Unidad 1. Conceptos de routing</h2>
     <h3>1.1 Configuración inicial del router</h3>
     <div class="H3">
         <h4>1.1.1 Funciones del router</h4>
@@ -57,7 +59,7 @@
             </ul>
         </div>
         <h4>1.1.4 Verificación de la conectividad de redes conectads directamente</h4>
-        <div class="H5">
+        <div class="H4">
             <p>Comandos show para verificar la operación y la configuración de una interfaz.</p>
             <ul>
                 <li>show ip interfaces brief</li>
@@ -112,5 +114,55 @@
             <p>Realiza la detección de redes y el mantenimiento de las tablas de routing.</p>
         </div>
     </div> 
+
+    <br><br>
+    
+    <h2>Unidad 2. Conceptos de routing</h2>
+    <h3>2.1 Decisiones de routing</h3>
+    <div class="H3">
+        <h4>2.1.1 Routing estaticó</h4>
+        <div class="H4">
+            <h5>2.1.1.1 Alcance de las redes remotas</h4>
+            <div class="h5"> 
+                <p>Un router puede descubrir redes remotas de dos maneras:</p>
+                <p>Manualmente: las redes remotas se introducen de forma manual en la tabla de rutas por medio de rutas estáticas.</p>
+                <p>Dinámicamente: las rutas remotas se descubren de forma automática mediante un protocolo de routing dinámico.</p>
+                <p>En la figura 1, se proporciona una situación de ejemplo de routing estático. En la figura 2, se proporciona una situación de ejemplo de routing dinámico con EIGRP.</p>
+            </div>
+            <h5>2.1.1.2 Utilizar el routing estático</h4>
+            <div class="h5">  
+                <p>Las rutas estáticas son útiles para redes más pequeñas con solo una ruta hacia una red externa. También proporcionan seguridad en una red más grande para ciertos tipos de tráfico o enlaces a otras redes que necesitan más control. </p>          
+            </div>
+            <h5>2.1.1.3 Usar rutas estáticas</h4>
+            <div class="h5">
+                <p>El routing estático tiene tres usos principales:</p>  
+                <p>Facilita el mantenimiento de la tabla de enrutamiento en redes más pequeñas en las cuales no está previsto que crezcan significativamente.</p>
+                <p>Proporciona routing hacia las redes de rutas internas y desde estas. Una red de rutas internas es aquella a la cual se accede a través un de una única ruta y cuyo router tiene solo un vecino.</p>      
+            </div>
+        </div>
+        <h4>2.1.2 Tipos de rutas estáticas</h4>
+        <div class="H4">
+            <h5>2.1.2.1 Aplicaciones de las rutas estáticas</h4>
+            <div class="h5">
+                <p>Las rutas estáticas suelen usarse con más frecuencia para conectarse a una red específica o para proporcionar un gateway de último recurso para una red de rutas internas.</p>            
+            </div>
+            <h5>2.1.2.2 Ruta estática estándar</h4>
+            <div class="h5">  
+                <p>Las rutas estáticas son útiles para conectarse a una red remota específica.</p>          
+            </div>
+            <h5>2.1.2.3 Ruta estática por defecto</h4>
+            <div class="h5"> 
+                <p>Una ruta estática predeterminada es aquella que coincide con todos los paquetes. Una ruta predeterminada identifica la dirección IP del gateway al cual el router envía todos los paquetes IP para los que no tiene una ruta descubierta o estática. Una ruta estática predeterminada es simplemente una ruta estática con 0.0.0.0/0 como dirección IPv4 de destino. Al configurar una ruta estática predeterminada, se crea un gateway de último recurso.</p>           
+            </div>
+            <h5>2.1.2.4 Ruta estática resumida</h4>
+            <div class="h5">  
+                <p>Para reducir el número de entradas en la tabla de routing, se pueden resumir varias rutas estáticas en una única ruta estática</p>          
+            </div>
+            <h5>2.1.2.5 Ruta estática flotante</h4>
+            <div class="h5">    
+                <p>Otro tipo de ruta estática es una ruta estática flotante. Las rutas estáticas flotantes son rutas estáticas que se utilizan para proporcionar una ruta de respaldo a una ruta estática o dinámica principal, en el caso de una falla del enlace. La ruta estática flotante se utiliza únicamente cuando la ruta principal no está disponible.</p>        
+            </div>
+        </div>
+    </div>
 </body>
 </html>
